@@ -1,0 +1,107 @@
+body {      
+    font-size: 10px;
+    background: #ffc600;
+    font-family: 'Amatic SC', cursive;
+    cursor: url(assets/icons/favicon.ico), auto;  
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
+
+  h1 {
+      margin: 0;
+    text-align: center;
+    font-size: 72px;
+  }
+  
+  .score {
+    background: rgba(255,255,255,0.2);
+    padding: 0 15px;
+    border-radius: 55px;
+  }
+  .start_game{
+      max-width: 100px;
+      min-height: 50px;
+      background-color: lawngreen;
+      border: 2px solid;
+      border-radius: 5px;
+  }
+
+  .start_game:hover{
+    cursor: url(assets/icons/favicon.ico), auto;  
+  }
+
+  
+  .game {
+    width: 1440px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+
+  }
+
+.hole_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+  .hole{
+    display: flex;
+    padding-top: 240px;
+    margin-right: 70px;
+    overflow: hidden;
+    position: relative;
+  
+
+}  
+ .dirt{
+     width: 180px;
+     z-index: 5;
+     position: relative;
+     bottom: -20px;
+
+ } 
+
+  
+  .mole {
+    background: url('assets/svg/mole.svg') bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;   
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition:all 0.2s;
+  
+  }
+  
+  .hole.up .mole {
+    top: 0; 
+  }
+
+
+  .total_score{
+      display: flex;
+      position: absolute;
+      top: 10px;
+      font-size: 24px;
+      right: 10%;
+      
+  }
+
+  .level{
+      font-size: 18px;
+  }
+
+  main{
+      display: flex;
+      max-height: 750px;
+  }
